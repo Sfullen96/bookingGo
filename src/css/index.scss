@@ -1,24 +1,16 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f1f1f1;
-  position: relative;
-}
+@import "./mixins";
+@import "../containers/PickupLocationForm/PickupLocationForm";
+@import "../components/SearchPreview/SearchPreview";
+@import "../components/SearchPreviewItem/SearchPreviewItem";
+@import "../components/SearchResult/SearchResult";
+@import "../components/SearchResults/SearchResults";
 
-// Define our breakpoints
-@mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+@include extra-small() {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    position: relative;
+  }
 }

@@ -1,0 +1,19 @@
+// Define our breakpoints
+@mixin i-phone-retina {
+  @media only screen and (min-width : 320px) { @content; }
+}
+@mixin extra-small {
+  @media only screen and (min-width : 480px) { @content; }
+}
+@mixin custom {
+  @media only screen and (min-width : 568px) { @content; }
+}
+@mixin small {
+  @media only screen and (min-width : 768px) { @content; }
+}
+@mixin medium {
+  @media only screen and (min-width : 992px) { @content; }
+}
+@mixin large {
+  @media only screen and (min-width : 1200px) { @content; }
+}

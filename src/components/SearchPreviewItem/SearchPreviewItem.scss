@@ -1,0 +1,28 @@
+@import "../../css/mixins";
+
+@include i-phone-retina() {
+  li {
+    height: 47px;
+    color: #989898;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-bottom: 1px solid #eaeaea;
+    div.row {
+      span {
+        background-color: #333;
+        padding: 5px 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        width: 70px;
+        color: #fff;
+        font-size: 12px;
+        float: left;
+        margin: auto 0;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}

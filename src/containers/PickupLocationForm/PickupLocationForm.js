@@ -5,6 +5,7 @@
 * */
 import React, {Component} from "react";
 import axios from "axios";
+import { Debounce } from 'react-throttle';
 import './PickupLocationForm.scss';
 import SearchPreview from '../../components/SearchPreview/SearchPreview';
 
@@ -17,6 +18,8 @@ class PickupLocationForm extends Component {
             focus: false,
             searchTerm: '',
             submissionError: '',
+            searchResults: null,
+            isFetching: false,
         }
     }
 
@@ -44,24 +47,44 @@ class PickupLocationForm extends Component {
         }
     };
 
-    handleChange = ( searchTerm ) => {
-        if ( searchTerm.currentTarget.value && searchTerm.currentTarget.value.length >= 1 ) {
+    handleChange = ( e ) => {
+        if ( e.currentTarget.value && e.currentTarget.value.length >= 1 ) {
             this.setState({
                 submissionError: "",
             });
         }
 
-        if ( searchTerm.currentTarget.value && searchTerm.currentTarget.value.length >= 2 ) {
-            this.setState( {
-                searchTerm: searchTerm.currentTarget.value,
-                showSearchPreview: true,
-            } );
+        if (
+            e.currentTarget.value &&
+            e.currentTarget.value.length >= 2 &&
+            !this.state.isFetching &&
+            e.currentTarget.value !== this.state.searchTerm ) {
+            this.setState({
+                searchTerm: e.currentTarget.value,
+                isFetching: true,
+            });
+
+            axios
+                .get( `https://cors.io/?https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows=${6}&solrTerm=${e.currentTarget.value}` )
+                .then( response => {
+                    if (response.data && response.data !== "" && response.data.results) {
+                        this.setState({
+                            searchResults: response.data.results.docs,
+                            showSearchPreview: true,
+                            isFetching: false,
+                        });
+                    }
+                });
         } else {
             this.setState( {
                 searchTerm: '',
                 showSearchPreview: false,
             } );
         }
+    };
+
+    handleKeyUp = (e) => {
+
     };
 
     onHover = () => {
@@ -77,13 +100,13 @@ class PickupLocationForm extends Component {
         } );
     };
 
-    onBlur = () => {
-        if ( !this.state.focus ) {
-            this.setState( {
-                showSearchPreview: false,
-            } );
-        }
-    };
+    // onBlur = () => {
+    //     if ( !this.state.focus ) {
+    //         this.setState( {
+    //             showSearchPreview: false,
+    //         } );
+    //     }
+    // };
 
     render() {
         const { showSearchPreview } = this.state;
@@ -93,17 +116,25 @@ class PickupLocationForm extends Component {
                 <form action="" >
                     <div className="form-group">
                         <label htmlFor="pickup-location">Pick-up Location</label>
-                        <input
-                            type="text"
-                            name="pickup-location"
-                            className="form-control"
-                            placeholder="city, airport, region, district..."
-                            // value={ value ? value : '' }
-                            onChange={ this.handleChange }
-                            autoComplete="off"
-                            onBlur={ this.onBlur }
-                            onFocus={ this.handleChange }
-                        />
+                        <Debounce time="500" handler="onChange">
+                            <input
+                                type="text"
+                                name="pickup-location"
+                                className="form-control"
+                                placeholder="city, airport, region, district..."
+                                // value={ value ? value : '' }
+                                onChange={this.handleChange}
+                                onKeyUp={this.handleKeyUp}
+                                autoComplete="off"
+                                onBlur={ this.onBlur }
+                            />
+                        </Debounce>
+                        {
+                            this.state.isFetching &&
+                                <span className="input-loader">
+                                    <i className="fa fa-spinner fa-spin"></i>
+                                </span>
+                        }
                         {
                             this.state.submissionError &&
                                 <span className="form-error">{this.state.submissionError}</span>
@@ -115,7 +146,7 @@ class PickupLocationForm extends Component {
                         >Search</button>
                         {
                             showSearchPreview &&
-                                <SearchPreview />
+                                <SearchPreview searchResults={this.state.searchResults}/>
                         }
                     </div>
                 </form>

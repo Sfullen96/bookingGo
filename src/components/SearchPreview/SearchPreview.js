@@ -1,4 +1,6 @@
 import React from "react";
+import SearchPreviewItem from "../SearchPreviewItem/SearchPreviewItem";
+import "./SearchPreview.scss";
 
 /*
 * SearchPreview component
@@ -8,9 +10,23 @@ import React from "react";
 * @param {Any} props - Holds the array of search previews
 * */
 const SearchPreview = props => {
+    if (!props.searchResults.length) {
+        return <h1>Loading...</h1>;
+    }
+
     return (
-        <div>
-            <h1>SearchResults</h1>
+        <div className="search-preview">
+            <ul>
+                {
+                    props
+                        .searchResults
+                        .map( (result, index)=> {
+                            return (
+                                <SearchPreviewItem key={index} searchPreviewItem={result} />
+                            );
+                        })
+                }
+            </ul>
         </div>
     );
 };
