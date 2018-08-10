@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="168d63b0-be84-421d-b16f-e79f366ea6ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPreviewItem/SearchPreviewItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPreviewItem/SearchPreviewItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPreviewItem/SearchPreviewItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPreviewItem/SearchPreviewItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/PickupLocationForm/PickupLocationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PickupLocationForm/PickupLocationForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,7 +53,7 @@
           <entry key="flowconfig" value="29" />
           <entry key="html" value="69" />
           <entry key="js" value="5494" />
-          <entry key="md" value="391" />
+          <entry key="md" value="422" />
           <entry key="scss" value="1461" />
         </counts>
       </usages-collector>
@@ -69,7 +64,7 @@
           <entry key="JavaScript" value="5494" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SCSS" value="1461" />
-          <entry key="XML" value="391" />
+          <entry key="XML" value="422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -122,8 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="175">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -347,18 +342,18 @@
       <workItem from="1533733309025" duration="19914000" />
       <workItem from="1533845519262" duration="9293000" />
       <workItem from="1533921943858" duration="3510000" />
-      <workItem from="1533929876042" duration="432000" />
+      <workItem from="1533929876042" duration="513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54334000" />
+    <option name="totallyTimeSpent" value="54415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14225501" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14225501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,8 +365,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50054586" side_tool="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054586" side_tool="true" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -598,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="175">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>

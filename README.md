@@ -1,9 +1,9 @@
 ## BookingGo Technical Test ([]())
-A React Application bootstrapped with Create React App for the BookingGo technical test.
-Created by Sam Fullen.
-I did some snapshot testing using Jest and Enzyme.
-The styling is done with Bootstrap 4 and Sass.
-The package manager used was yarn
+##### A React Application bootstrapped with Create React App for the BookingGo technical test.
+##### Created by Sam Fullen.
+##### I did some snapshot testing using Jest and Enzyme.
+##### The styling is done with Bootstrap 4 and Sass.
+##### The package manager used was yarn
 ---
 ## Running the project locally
 ### Prerequisites
@@ -34,11 +34,11 @@ yarn start
 - [Webpack](https://webpack.js.org/)
 - HTML
 - CSS
-- [SASS] (https://sass-lang.com/)
-- [Bootstrap 4] (https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-- [Jest] (https://jestjs.io/)
-- [Enzyme] (https://github.com/airbnb/enzyme)
-- [Yarn] (https://yarnpkg.com/lang/en/)
+- [SASS](https://sass-lang.com/)
+- [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://github.com/airbnb/enzyme)
+- [Yarn](https://yarnpkg.com/lang/en/)
 --
 ## Useful Commands
 ### To run the test suite
