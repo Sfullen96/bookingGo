@@ -16,7 +16,6 @@ class PickupLocationForm extends Component {
 
         this.state = {
             showSearchPreview: false,
-            searchTerm: '',
             submissionError: '',
             submissionSuccess: false,
             searchResults: null,
@@ -99,18 +98,18 @@ class PickupLocationForm extends Component {
     * @param {Event} e
     * */
     handleSearch = (e) => {
-        const { searchTerm } = this.state;
+        const { value } = this.state;
 
         e.preventDefault();
 
         // If nothing entered in the input
-        if (!searchTerm.length) {
+        if (!value.length) {
             this.setState({
                 submissionError: 'Please enter a pickup location',
             });
         } else {
             this.setState({
-                submissionSuccess: `Successfully submitted search for: ${searchTerm}`,
+                submissionSuccess: `Successfully submitted search for: ${value}`,
             });
         }
     };
@@ -128,7 +127,7 @@ class PickupLocationForm extends Component {
             value: e.target.value,
         });
 
-        const { searchTerm, isFetching } = this.state;
+        const { isFetching } = this.state;
 
         // reset the submission error as soon as someone has started typing
         if (e.target.value && e.target.value.length >= 1) {
@@ -141,10 +140,8 @@ class PickupLocationForm extends Component {
             e.target.value // If there is a value set
             && e.target.value.length > 2 // and that value is greater than 2 characters
             && !isFetching // and not already fetching
-            // and the inputted value is different to the one stored in state
-            && e.target.value !== searchTerm) {
+        ) {
             this.setState({
-                searchTerm: e.target.value,
                 isFetching: true,
             });
 
@@ -163,7 +160,6 @@ class PickupLocationForm extends Component {
                 });
         } else {
             this.setState({
-                searchTerm: '',
                 showSearchPreview: false,
             });
         }
@@ -213,7 +209,7 @@ class PickupLocationForm extends Component {
                             className="form-control"
                             debounceTimeout={500}
                             placeholder="city, airport, region, district..."
-                            onBlur={this.onBlur}
+                            // onBlur={this.onBlur}
                             onChange={this.handleChange}
                             autoComplete="off"
                             value={value}
@@ -243,7 +239,7 @@ class PickupLocationForm extends Component {
                             submissionSuccess
                             && (
                                 <span className="form-error">
-                                    {submissionError}
+                                    {submissionSuccess}
                                 </span>
                             )
                         }
