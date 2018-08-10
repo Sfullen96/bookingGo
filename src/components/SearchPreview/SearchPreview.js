@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import SearchPreviewItem from '../SearchPreviewItem/SearchPreviewItem';
 import './SearchPreview.scss';
@@ -9,7 +10,25 @@ import './SearchPreview.scss';
 *
 * @param {Any} props - Holds the array of search previews
 * */
-const SearchPreview = (props) => {
+
+type searchResult = {
+    country: string,
+    bookingId: number,
+    city: string,
+    iata: ?string,
+    name: string,
+    placeType: ?string,
+    region: ?string,
+};
+
+type Props = {
+    searchResults: Array<searchResult>,
+    onClick: Function,
+    onMouseOut: Function,
+    onMouseOver: Function,
+};
+
+const SearchPreview = (props: Props) => {
     const {
         searchResults,
         onClick,

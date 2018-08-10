@@ -5,6 +5,7 @@
 ##### The styling is done with Bootstrap 4 and Sass.
 ##### The package manager used was yarn.
 ##### I used Eslint to the AirBnb standard
+##### /src/components/searchPreview.js uses flow for static type checking, I ran out of time to implement it into my other components
 ---
 ## Running the project locally
 ### Prerequisites
@@ -41,7 +42,8 @@ yarn start
 - [Jest](https://jestjs.io/)
 - [Enzyme](https://github.com/airbnb/enzyme)
 - [Yarn](https://yarnpkg.com/lang/en/)
-- Eslint
+- [ESLint](https://eslint.org/)
+- [Flow](https://flow.org)
 ---
 ## Directory Structure
 - All of my own code can be found in the /src directory
@@ -55,4 +57,5 @@ yarn start
 ```
 yarn test
 ```
-### If you have an error in the code with Eslint to do with linebreaks, see the .eslintrc.js file line 9 and change the line-break-style to `"linebreak-style": ["error", "windows"]` for windows or `"linebreak-style": ["error", "unix"]` for unix based systems
+##### If you have an error in the code with Eslint to do with linebreaks, see the .eslintrc.js file line 9 and change the line-break-style to `"linebreak-style": ["error", "windows"]` for windows or `"linebreak-style": ["error", "unix"]` for unix based systems
+##### Run `yarn flow` to run the static type checker

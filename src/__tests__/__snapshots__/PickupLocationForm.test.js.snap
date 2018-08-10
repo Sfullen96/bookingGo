@@ -42,7 +42,7 @@ ShallowWrapper {
                               inputRef={undefined}
                               minLength={0}
                               name="pickup-location"
-                              onBlur={[Function]}
+                              onBlur={undefined}
                               onChange={[Function]}
                               onFocus={[Function]}
                               onKeyDown={undefined}
@@ -101,7 +101,7 @@ ShallowWrapper {
                         inputRef={undefined}
                         minLength={0}
                         name="pickup-location"
-                        onBlur={[Function]}
+                        onBlur={undefined}
                         onChange={[Function]}
                         onFocus={[Function]}
                         onKeyDown={undefined}
@@ -142,7 +142,7 @@ ShallowWrapper {
                 inputRef={undefined}
                 minLength={0}
                 name="pickup-location"
-                onBlur={[Function]}
+                onBlur={undefined}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={undefined}
@@ -193,7 +193,7 @@ ShallowWrapper {
                 "inputRef": undefined,
                 "minLength": 0,
                 "name": "pickup-location",
-                "onBlur": [Function],
+                "onBlur": undefined,
                 "onChange": [Function],
                 "onFocus": [Function],
                 "onKeyDown": undefined,
@@ -263,7 +263,7 @@ ShallowWrapper {
                                     inputRef={undefined}
                                     minLength={0}
                                     name="pickup-location"
-                                    onBlur={[Function]}
+                                    onBlur={undefined}
                                     onChange={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={undefined}
@@ -322,7 +322,7 @@ ShallowWrapper {
                             inputRef={undefined}
                             minLength={0}
                             name="pickup-location"
-                            onBlur={[Function]}
+                            onBlur={undefined}
                             onChange={[Function]}
                             onFocus={[Function]}
                             onKeyDown={undefined}
@@ -363,7 +363,7 @@ ShallowWrapper {
                   inputRef={undefined}
                   minLength={0}
                   name="pickup-location"
-                  onBlur={[Function]}
+                  onBlur={undefined}
                   onChange={[Function]}
                   onFocus={[Function]}
                   onKeyDown={undefined}
@@ -414,7 +414,7 @@ ShallowWrapper {
                   "inputRef": undefined,
                   "minLength": 0,
                   "name": "pickup-location",
-                  "onBlur": [Function],
+                  "onBlur": undefined,
                   "onChange": [Function],
                   "onFocus": [Function],
                   "onKeyDown": undefined,

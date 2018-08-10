@@ -1,5 +1,8 @@
 module.exports = {
-    "extends": "airbnb",
+    "extends": [
+        "airbnb",
+        "plugin:flowtype/recommended",
+    ],
     "rules": {
         "indent": ["error", 4],
         "react/jsx-indent": ["error", 4],
@@ -13,4 +16,7 @@ module.exports = {
         "jsx": true,
     },
     parser: "babel-eslint",
+    plugins: [
+        "flowtype",
+    ]
 };
