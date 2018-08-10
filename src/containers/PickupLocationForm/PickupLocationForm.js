@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { DebounceInput } from 'react-debounce-input';
-import SearchPreview from '../SearchPreview/SearchPreview';
+import SearchPreview from '../../components/SearchPreview/SearchPreview';
 import './PickupLocationForm.scss';
 
 class PickupLocationForm extends Component {

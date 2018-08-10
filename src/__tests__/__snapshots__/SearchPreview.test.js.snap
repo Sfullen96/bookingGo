@@ -16,9 +16,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        SearchResults
-</h1>,
+      "children": <ul />,
+      "className": "search-preview",
+      "onMouseOut": undefined,
+      "onMouseOver": undefined,
     },
     "ref": null,
     "rendered": Object {
@@ -26,11 +27,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "SearchResults",
+        "children": undefined,
       },
       "ref": null,
-      "rendered": "SearchResults",
-      "type": "h1",
+      "rendered": null,
+      "type": "ul",
     },
     "type": "div",
   },
@@ -40,9 +41,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          SearchResults
-</h1>,
+        "children": <ul />,
+        "className": "search-preview",
+        "onMouseOut": undefined,
+        "onMouseOver": undefined,
       },
       "ref": null,
       "rendered": Object {
@@ -50,11 +52,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "SearchResults",
+          "children": undefined,
         },
         "ref": null,
-        "rendered": "SearchResults",
-        "type": "h1",
+        "rendered": null,
+        "type": "ul",
       },
       "type": "div",
     },

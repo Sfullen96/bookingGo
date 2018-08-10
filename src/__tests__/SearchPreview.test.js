@@ -1,7 +1,8 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import SearchPreview from '../containers/SearchPreview/SearchPreview';
+import SearchPreview from '../components/SearchPreview/SearchPreview';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -10,6 +11,6 @@ Enzyme.configure({ adapter: new Adapter() });
 * and matches it's latest snapshot
 * */
 it('Should render the search preview and it should match the snapshot', () => {
-    const component = shallow( <SearchPreview /> );
+    const component = shallow(<SearchPreview />);
     expect(component).toMatchSnapshot();
 });

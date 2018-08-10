@@ -1,6 +1,6 @@
 @import "./mixins";
 @import "../containers/PickupLocationForm/PickupLocationForm";
-@import "../containers/SearchPreview/SearchPreview";
+@import "../components/SearchPreview/SearchPreview";
 @import "../components/SearchPreviewItem/SearchPreviewItem";
 
 @include extra-small() {

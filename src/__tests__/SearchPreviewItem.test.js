@@ -2,15 +2,15 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import PickupLocationForm from '../containers/PickupLocationForm/PickupLocationForm';
+import SearchPreviewItem from '../components/SearchPreviewItem/SearchPreviewItem';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 /*
-* Test that the PickupLocationForm renders
+* Test that the SearchPreview renders
 * and matches it's latest snapshot
 * */
-it('should render PickupLocationForm component and it should match the snapshot', () => {
-    const component = shallow(<PickupLocationForm />);
+it('Should render the search preview and it should match the snapshot', () => {
+    const component = shallow(<SearchPreviewItem />);
     expect(component).toMatchSnapshot();
 });
