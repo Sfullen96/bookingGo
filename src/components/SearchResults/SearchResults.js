@@ -2,19 +2,20 @@
 * SearchResults component
 * Renders the list of search results
 * */
-import React, {Component} from "react";
-import queryString from "query-string";
+import React, { Component } from 'react';
 
 class SearchResults extends Component {
     componentDidMount() {
-        console.log( "PROPS", this.props );
-        console.log( "STATE", this.state );
+        console.log('PROPS', this.props);
+        console.log('STATE', this.state);
     }
-    
+
     render() {
-        return(
+        return (
             <div>
-                <h1>SearchResults</h1>
+                <h1>
+                    SearchResults
+                </h1>
                 {
                     // console.log( "PROPS", props )
                 }

@@ -9,7 +9,7 @@
     border-radius: 2px;
     border-bottom: 1px solid #eaeaea;
     div.row {
-      span {
+      span.tag {
         background-color: #333;
         padding: 5px 10px;
         -webkit-border-radius: 10px;
@@ -22,6 +22,29 @@
         margin: auto 0;
         font-weight: bold;
         text-align: center;
+        &.tag-A {
+          background-color: #f2817f;
+        }
+        &.tag-C {
+          background-color: #6eb8fa;
+        }
+        &.tag-D {
+          background-color: #70d58e;
+        }
+        &.tag-S {
+          background-color: #9d9dbb;
+        }
+        &.tag-P {
+          background-color: #ffa981;
+        }
+      }
+      .item-info {
+        width: 100%;
+        float: left;
+        font-size: 14px;
+        &:nth-child(2) {
+          font-size: 85%;
+        }
       }
     }
   }
