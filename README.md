@@ -10,10 +10,11 @@
 ### Prerequisites
 - You must have a recent version of Node JS installed on your machine [https://nodejs.org/en/download/]()
 - You must also have yarn installed on your machine [https://yarnpkg.com/lang/en/]()
+- You must have GIT installed on your machine to clone the repository
 
 ### Clone the repository using GIT
 ```
-https://github.com/Sfullen96/bookingGo.git
+git clone https://github.com/Sfullen96/bookingGo.git
 ```
 
 ### Navigate into the folder
