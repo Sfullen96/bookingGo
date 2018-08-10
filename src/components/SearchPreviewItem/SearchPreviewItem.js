@@ -42,38 +42,54 @@ const SearchPreviewItem = (props) => {
         }
     }
 
+    console.log('searchPreviewItem', searchPreviewItem);
     if (searchPreviewItem) {
         return (
             <Aux>
-                <li onClick={() => onClick(searchPreviewItem)}>
-                    <div className="row d-flex align-items-center h-100">
-                        <div className="col-1 col-sm-2">
-                            <span
-                                className={`tag tag-${searchPreviewItem && searchPreviewItem.placeType && searchPreviewItem.placeType} align-center d-none d-sm-block`}
-                            >
-                                {placeType}
-                            </span>
-                            <span
-                                className="align-center d-block d-sm-none"
-                            >
-                                <i className={`fa fa-${placeTypeIcon}`} />
-                            </span>
-                        </div>
-                        <div className="col-10">
-                            <span className="item-info">
-                                {`${searchPreviewItem && searchPreviewItem.name && searchPreviewItem.name} ${('iata' in searchPreviewItem) ? `(${searchPreviewItem.iata})` : ''}`}
-                            </span>
-                            <span className="item-info">
-                                {
-                                    ('city' in searchPreviewItem)
-                                        ? `${searchPreviewItem.city}, `
-                                        : `${searchPreviewItem.region}, `
-                                }
-                                {`${searchPreviewItem.country}`}
-                            </span>
-                        </div>
-                    </div>
-                </li>
+                {
+                    searchPreviewItem.name !== 'No results found' ? (
+                        <li onClick={() => onClick(searchPreviewItem)}>
+                            <div className="row d-flex align-items-center h-100">
+                                <div className="col-1 col-sm-2">
+                                    <span
+                                        className={`tag tag-${searchPreviewItem && searchPreviewItem.placeType && searchPreviewItem.placeType} align-center d-none d-sm-block`}
+                                    >
+                                        {placeType}
+                                    </span>
+                                    <span
+                                        className="align-center d-block d-sm-none"
+                                    >
+                                        <i className={`fa fa-${placeTypeIcon}`} />
+                                    </span>
+                                </div>
+                                <div className="col-10">
+                                    <span className="item-info">
+                                        {`${searchPreviewItem && searchPreviewItem.name && searchPreviewItem.name} ${('iata' in searchPreviewItem) ? `(${searchPreviewItem.iata})` : ''}`}
+                                    </span>
+                                    <span className="item-info">
+                                        {
+                                            ('city' in searchPreviewItem)
+                                                ? `${searchPreviewItem.city}, `
+                                                : `${searchPreviewItem.region}, `
+                                        }
+                                        {`${searchPreviewItem.country}`}
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    )
+                        : (
+                            <li>
+                                <div className="row d-flex align-items-center h-100">
+                                    <div className="col-12">
+                                        <span className="item-info">
+                                            {searchPreviewItem.name}
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        )
+                }
             </Aux>
         );
     }

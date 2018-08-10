@@ -34,7 +34,7 @@ ShallowWrapper {
                     <DebounceInput
                               autoComplete="off"
                               className="form-control"
-                              debounceTimeout={500}
+                              debounceTimeout={300}
                               element="input"
                               forceNotifyByEnter={true}
                               forceNotifyOnBlur={false}
@@ -93,7 +93,7 @@ ShallowWrapper {
             <DebounceInput
                         autoComplete="off"
                         className="form-control"
-                        debounceTimeout={500}
+                        debounceTimeout={300}
                         element="input"
                         forceNotifyByEnter={true}
                         forceNotifyOnBlur={false}
@@ -134,7 +134,7 @@ ShallowWrapper {
               <DebounceInput
                 autoComplete="off"
                 className="form-control"
-                debounceTimeout={500}
+                debounceTimeout={300}
                 element="input"
                 forceNotifyByEnter={true}
                 forceNotifyOnBlur={false}
@@ -185,7 +185,7 @@ ShallowWrapper {
               "props": Object {
                 "autoComplete": "off",
                 "className": "form-control",
-                "debounceTimeout": 500,
+                "debounceTimeout": 300,
                 "element": "input",
                 "forceNotifyByEnter": true,
                 "forceNotifyOnBlur": false,
@@ -255,7 +255,7 @@ ShallowWrapper {
                         <DebounceInput
                                     autoComplete="off"
                                     className="form-control"
-                                    debounceTimeout={500}
+                                    debounceTimeout={300}
                                     element="input"
                                     forceNotifyByEnter={true}
                                     forceNotifyOnBlur={false}
@@ -314,7 +314,7 @@ ShallowWrapper {
               <DebounceInput
                             autoComplete="off"
                             className="form-control"
-                            debounceTimeout={500}
+                            debounceTimeout={300}
                             element="input"
                             forceNotifyByEnter={true}
                             forceNotifyOnBlur={false}
@@ -355,7 +355,7 @@ ShallowWrapper {
                 <DebounceInput
                   autoComplete="off"
                   className="form-control"
-                  debounceTimeout={500}
+                  debounceTimeout={300}
                   element="input"
                   forceNotifyByEnter={true}
                   forceNotifyOnBlur={false}
@@ -406,7 +406,7 @@ ShallowWrapper {
                 "props": Object {
                   "autoComplete": "off",
                   "className": "form-control",
-                  "debounceTimeout": 500,
+                  "debounceTimeout": 300,
                   "element": "input",
                   "forceNotifyByEnter": true,
                   "forceNotifyOnBlur": false,
