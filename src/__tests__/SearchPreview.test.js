@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import SearchPreview from '../components/SearchPreview/SearchPreview';
+import SearchPreview from '../containers/SearchPreview/SearchPreview';
 
 Enzyme.configure({ adapter: new Adapter() });
 

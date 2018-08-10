@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import Aux from '../../hoc/Auxiliary';
 
 const SearchPreviewItem = (props) => {
-    const { searchPreviewItem } = props;
+    const { searchPreviewItem, onClick } = props;
     let placeType = '';
 
     switch (searchPreviewItem.placeType) {
@@ -28,7 +30,7 @@ const SearchPreviewItem = (props) => {
 
     return (
         <Aux>
-            <li>
+            <li onClick={() => onClick(searchPreviewItem)}>
                 <div className="row d-flex align-items-center h-100">
                     <div className="col-2">
                         <span className={`tag tag-${searchPreviewItem.placeType} align-center`}>
