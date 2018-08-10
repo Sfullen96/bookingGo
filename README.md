@@ -54,4 +54,4 @@ yarn start
 ```
 yarn test
 ```
-### If you have an error in the code with Eslint to do with linebreaks, see the .eslintrc.js file line 9 and change the line-break-style to "linebreak-style": ["error", "windows"] for windows or "linebreak-style": ["error", "unix"] for unix based systems
+### If you have an error in the code with Eslint to do with linebreaks, see the .eslintrc.js file line 9 and change the line-break-style to `"linebreak-style": ["error", "windows"]` for windows or `"linebreak-style": ["error", "unix"]` for unix based systems
