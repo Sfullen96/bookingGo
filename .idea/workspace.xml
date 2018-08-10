@@ -30,7 +30,7 @@
           <entry key="flowconfig" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="6" />
-          <entry key="js" value="49" />
+          <entry key="js" value="51" />
           <entry key="json" value="4" />
           <entry key="md" value="1" />
           <entry key="scss" value="14" />
@@ -41,7 +41,7 @@
           <entry key="CSS" value="12" />
           <entry key="HTML" value="6" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="49" />
+          <entry key="JavaScript" value="51" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="14" />
           <entry key="XML" value="1" />
@@ -53,7 +53,7 @@
           <entry key="flowconfig" value="29" />
           <entry key="html" value="69" />
           <entry key="js" value="5494" />
-          <entry key="md" value="422" />
+          <entry key="md" value="1220" />
           <entry key="scss" value="1461" />
         </counts>
       </usages-collector>
@@ -64,10 +64,14 @@
           <entry key="JavaScript" value="5494" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="SCSS" value="1461" />
-          <entry key="XML" value="422" />
+          <entry key="XML" value="1220" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
     </session>
     <session id="1872772102">
       <usages-collector id="statistics.file.extensions.open">
@@ -117,8 +121,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="385">
+              <caret line="56" column="254" selection-start-line="56" selection-start-column="254" selection-end-line="56" selection-end-column="254" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -242,32 +255,6 @@
               <item name="booking-go" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="booking-go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booking-go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booking-go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booking-go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchPreview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booking-go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booking-go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchPreviewItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="booking-go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="booking-go" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -342,18 +329,18 @@
       <workItem from="1533733309025" duration="19914000" />
       <workItem from="1533845519262" duration="9293000" />
       <workItem from="1533921943858" duration="3510000" />
-      <workItem from="1533929876042" duration="513000" />
+      <workItem from="1533929876042" duration="843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54415000" />
+    <option name="totallyTimeSpent" value="54745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14225501" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14225501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -366,7 +353,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054586" side_tool="true" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -563,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/PickupLocationForm/PickupLocationForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-273">
@@ -591,10 +564,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="385">
+          <caret line="56" column="254" selection-start-line="56" selection-start-column="254" selection-end-line="56" selection-end-column="254" />
         </state>
       </provider>
     </entry>
