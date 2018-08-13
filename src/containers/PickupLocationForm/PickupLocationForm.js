@@ -209,7 +209,7 @@ class PickupLocationForm extends Component {
                             className="form-control"
                             debounceTimeout={300}
                             placeholder="city, airport, region, district..."
-                            // onBlur={this.onBlur}
+                            onBlur={this.onBlur}
                             onChange={this.handleChange}
                             autoComplete="off"
                             value={value}
